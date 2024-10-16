@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/global-reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <title>Bem vindo ao SocialPet</title>
+</head>
+
+<body>
+    <main>
+        <div class="main-login">
+            <div class="left-login">
+                <h1>Faça login<br>E entre para a familia SocialPet.</h1>
+                <img src="./src/assets/images/Petfamily.gif" alt="Petfamily animaçao">
+            </div>
+            <form action="./src/pages/home.html" class="right-login">
+                <div class="card-login">
+                    <h2>Entre na sua conta</h2>
+                    <div class="textfield">
+                        <label for="usuario">Usuario:</label>
+                        <input type="text" name="Usuario" placeholder="Usuario">
+                    </div>
+                    <div class="textfield">
+                        <label for="senha">Senha:</label>
+                        <input type="password" name="senha" placeholder="Senha">
+                        <a href="#">esqueceu a senha?</a>
+                    </div>
+                    <div class="checkfield">
+                        <label for="conectado">Permanecer conectado</label>
+                        <input type="checkbox" name="" id="">
+                    </div>
+                    <button type="submit" class="btn-login">Entrar</button>
+                    <p>OU</p>
+                    <button class="btn-sign" type="button">CADASTRE-SE</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script>
+
+        const btnSign = document.querySelector('.btn-sign');
+
+        btnSign.addEventListener('click', () => {
+            window.location.href = './src/pages/cadastro.html';
+        });
+
+    </script>
+
+</body>
+
+</html>

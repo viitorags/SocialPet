@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+body {
+    font-family: 'Outfit';
+    font-style: normal;
+    background: #FFF0B7;
+    overflow: hidden;
+}
+
+.main-login{
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-login{
+    width: 50vw;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left-login > h1 {
+    color: #8d6138;
+}
+
+/* Formulário */
+
+.right-login{
+    width: 50vw;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login{
+    width: 60%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #FFF;
+    border-radius: 5px;
+    box-shadow: 0px 10px 40px #EC9A4856;
+}
+
+.card-login > h2 {
+    color: #060606;
+    font-weight: 600;
+    margin: 0;
+}
+
+.textfield{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.textfield > input {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    background: #EEE;
+    color: #000;
+    font-size: 12pt;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield > label {
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.textfield > a {
+    margin-top: 20px;
+    color: #EC9A48;
+}
+
+.checkfield {
+    display: flex;
+    align-self: start;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.checkfield > label {
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.checkfield > input {
+    width: 15px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+/* Botões */
+
+.btn-login{
+    background-color: #EC9A48;
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    color:#FFF;
+    cursor: pointer;
+}
+
+.btn-sign{
+    background-color: #D9D9D9;
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    color:#000;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    .main-login {
+        background-image: url('/public/assets/img/Petfamily.gif');
+        background-repeat: no-repeat;
+    }
+
+    .left-login {
+        display: none;
+    }
+
+    .right-login {
+        width: 500px;
+        height: 599px;
+    }
+
+    .card-login {
+        width: 300px;
+    }
+}
