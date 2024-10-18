@@ -1,144 +1,161 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
 body {
-    font-family: 'Outfit';
+    font-family: 'Outfit', sans-serif;
     font-style: normal;
     background-color: #fdf5d2;
+    margin: 0;
+    padding: 0;
     overflow: hidden;
-    width: 100%;
+}
+
+.main-sign {
+    width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
 }
 
-.container {
-    width: 80%;
-    height: 90vh;
-    display: flex;
-    box-shadow: none;
-
-}
-
-.form-image {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-}
-
-.form {
-    width: 50%;
+.left-sign {
+    width: 50vw;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #FFF;
-    padding: 6rem;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+    padding: 20px;
+    text-align: center;
 }
 
-.form-header {
-    margin-bottom: 0;
-    display: flex;
-    justify-content: space-between;
+.left-sign img {
+    max-width: 40%;
+    height: auto;
 }
 
-.login-button {
+.left-sign h1 {
+    color: #8d6138;
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+.right-sign {
+    width: 50vw;
+    height: 100vh;
     display: flex;
+    justify-content: center;
     align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-.login-button button {
-    border: none;
-    background-color: #EC9A48;
-    padding: 0.4rem 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.login-buttom button:houver {
-    background-color: #6c63fff1;
-}
-
-.login-button button a {
-    text-decoration: none;
-    font-weight: 500;
-    color: rgb(244, 246, 246);
-}
-
-.form-header h1::after {
-    content: "";
-    display: block;
-    width: 5rem;
-    height: 0.3rem;
-    background-color: #EC9A48;
-    margin: 0 auto;
-    position: absolute;
-    border-radius: 10px;
-}
-
-.Input-group {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 1rem 0;
-
-}
-
-.input-box {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 0 0;
-}
-
-.input-box input {
+.card-sign {
     width: 100%;
+    max-width: 400px;
+    padding: 30px 35px;
+    background: #FFF;
+    border-radius: 8px;
+    box-shadow: 0px 10px 40px rgba(236, 154, 72, 0.35);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-sign h2 {
+    color: #060606;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.textfield {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.textfield label {
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.textfield input {
+    width: 100%;
+    padding: 12px;
     border: none;
     border-radius: 5px;
-    padding: 8px;
     background: #EEE;
     color: #000;
-    font-size: 12pt;
+    font-size: 14px;
     outline: none;
     box-sizing: border-box;
 }
 
-.input-box input:hover {
-    background-color: #e0e0db;
+.textfield a {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #EC9A48;
+    text-decoration: none;
 }
 
-.input-box input:focus-visible {
-    outline: 1px solid #9c9c9d;
+.textfield a:hover {
+    text-decoration: underline;
 }
 
-.input-box label,
-.geender-title h6 {
-    font-weight: 500;
-    margin-bottom: 10px;
-}
-
-.input-box input::placeholder {
-    color: #000000be;
-
-}
-
-.continue-button {
+.checkfield {
     display: flex;
     align-items: center;
+    margin-top: 10px;
 }
 
-.continue-button button {
-    border: none;
+.checkfield label {
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+.checkfield input {
+    width: 15px;
+    height: 15px;
+}
+
+.btn-sign {
     background-color: #EC9A48;
-    padding: 0.4rem 1rem;
+    width: 100%;
+    padding: 16px 0;
+    margin-top: 20px;
+    border: none;
     border-radius: 5px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #FFF;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.continue-button button a {
-    text-decoration: none;
-    font-weight: 500;
-    color: rgb(244, 246, 246);
+.btn-sign:hover {
+    background-color: #d98840;
+}
+
+@media only screen and (max-width: 768px) {
+    .main-sign {
+        flex-direction: column;
+    }
+
+    .left-sign {
+        display: none;
+    }
+
+    .right-sign {
+        width: 100vw;
+        height: auto;
+        padding: 0;
+    }
+
+    .card-sign {
+        width: 90%;
+        max-width: 350px;
+    }
 }
