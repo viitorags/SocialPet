@@ -6,21 +6,26 @@ body {
     background-color: #fdf5d2;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     overflow: hidden;
 }
 
 .main-sign {
     width: 100vw;
-    height: 100vh;
+    height: auto;
+    min-height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    padding: 40px 0;
 }
 
 .left-sign {
-    width: 50vw;
-    height: 100vh;
+    width: 45vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,19 +35,24 @@ body {
 }
 
 .left-sign img {
-    max-width: 40%;
+    max-width: 60%;
     height: auto;
 }
 
 .left-sign h1 {
     color: #8d6138;
-    font-size: 2rem;
+    font-size: 2.2rem;
     margin-top: 20px;
+    font-weight: 700;
+}
+
+.left-sign p {
+    font-size: 1.2rem;
+    color: #5a462e;
 }
 
 .right-sign {
-    width: 50vw;
-    height: 100vh;
+    width: 45vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,7 +63,7 @@ body {
 .card-sign {
     width: 100%;
     max-width: 400px;
-    padding: 30px 35px;
+    padding: 25px 30px;
     background: #FFF;
     border-radius: 8px;
     box-shadow: 0px 10px 40px rgba(236, 154, 72, 0.35);
@@ -83,14 +93,19 @@ body {
 
 .textfield input {
     width: 100%;
-    padding: 12px;
-    border: none;
+    padding: 10px;
+    border: 1px solid #ec9a48;
     border-radius: 5px;
     background: #EEE;
     color: #000;
     font-size: 14px;
     outline: none;
     box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.textfield input:focus {
+    border-color: #d98840;
 }
 
 .textfield a {
@@ -104,26 +119,10 @@ body {
     text-decoration: underline;
 }
 
-.checkfield {
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
-}
-
-.checkfield label {
-    font-weight: 400;
-    margin-left: 10px;
-}
-
-.checkfield input {
-    width: 15px;
-    height: 15px;
-}
-
 .btn-sign {
     background-color: #EC9A48;
     width: 100%;
-    padding: 16px 0;
+    padding: 14px 0;
     margin-top: 20px;
     border: none;
     border-radius: 5px;
@@ -142,6 +141,8 @@ body {
 @media only screen and (max-width: 768px) {
     .main-sign {
         flex-direction: column;
+        height: auto;
+        min-height: 100vh;
     }
 
     .left-sign {
@@ -157,5 +158,6 @@ body {
     .card-sign {
         width: 90%;
         max-width: 350px;
+        box-shadow: none;
     }
 }
