@@ -93,6 +93,11 @@ body {
     margin-top: 20px;
     color: #EC9A48;
     font-size: 14px;
+    text-decoration: none;
+}
+
+.textfield a:hover {
+    text-decoration: underline;
 }
 
 .checkfield {
@@ -125,6 +130,11 @@ body {
 .textfield-sign > a {
     color: #EC9A48;
     font-size: 14px;
+    text-decoration: none;
+}
+
+.textfield-sign a:hover {
+    text-decoration: underline;
 }
 
 /* Botões */
@@ -141,6 +151,10 @@ body {
     font-weight: 800;
     color:#FFF;
     cursor: pointer;
+}
+
+.btn-login:hover {
+    background-color: #d98840;
 }
 
 @media only screen and (max-width: 768px) {
