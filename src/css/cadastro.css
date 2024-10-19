@@ -110,7 +110,7 @@ body {
 
 .textfield a {
     margin-top: 20px;
-    font-size: 14px;
+    font-size: 1rem;
     color: #EC9A48;
     text-decoration: none;
 }
@@ -135,6 +135,7 @@ body {
 
 .btn-sign:hover {
     background-color: #d98840;
+    transition: 0.5s ease-in-out;
 }
 
 @media only screen and (max-width: 768px) {
