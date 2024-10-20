@@ -104,7 +104,6 @@ const addSubmitHandler = () => {
             previewContainer.style.display = 'none';
             selectedImages = [];
 
-            alert('Postagem enviada com sucesso!');
         } else {
             alert('Verifique o campo digitado. O texto deve ter pelo menos 3 caracteres.');
         }
