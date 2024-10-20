@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="/SocialPet/src/css/global-reset.css">
-    <link rel="stylesheet" href="/SocialPet/src/css/home.css">
+    <link rel="stylesheet" href="/src/css/global-reset.css">
+    <link rel="stylesheet" href="/src/css/home.css">
     <title>Document</title>
 </head>
 
 <body>
     <header>
-        <img src="/SocialPet/src/assets/images/logo - SocialPet correto.png" height="60">
+        <img src="/src/assets/images/logo - SocialPet correto.png" height="60">
     </header>
 
     <main>
@@ -21,7 +21,7 @@
             <article class="post">
 
                 <div class="post-header">
-                    <img src="/SocialPet/src/assets/images/gato-grilado.jpg" class="img-user-post" alt="Foto de perfil">
+                    <img src="/src/assets/images/gato-grilado.jpg" class="img-user-post" alt="Foto de perfil">
                     <div class="user-info">
                         <h3>MyKão Tyson</h3>
                         <p>21h</p>
@@ -30,16 +30,16 @@
 
                 <div class="post-content">
                     <p>Texto da postagem</p>
-                    <img src="/SocialPet/src/assets/images/cachorros-fofos0.jpg" alt="Imagem da postagem">
+                    <img src="/src/assets/images/cachorros-fofos0.jpg" alt="Imagem da postagem">
                 </div>
 
                 <div class="post-actions">
-                    <button type="button" class="files-post like"><img src="/SocialPet/src/assets/icons/paw.svg"
-                            alt="Curtir"><span>Curtir</span></button>
-                    <button type="button" class="files-post direct"><img src="/SocialPet/src/assets/icons/direct.svg"
-                            alt="Comentar"><span>Comentar</span></button>
-                    <button type="button" class="files-post share"><img src="/SocialPet/src/assets/icons/share.svg"
-                            alt="Compartilhar"><span>Compartilhar</span></button>
+                    <button type="button" class="files-post like"><img src="/src/assets/icons/paw.svg"
+                            alt="Curtir"><span>10k</span></button>
+                    <button type="button" class="files-post direct"><img src="/src/assets/icons/direct.svg"
+                            alt="Comentar"><span>827</span></button>
+                    <button type="button" class="files-post share"><img src="/src/assets/icons/share.svg"
+                            alt="Compartilhar"><span>140</span></button>
                 </div>
             </article>
         </section>
@@ -48,7 +48,7 @@
             <div class="info-user">
                 <!--Imagem do usuário-->
                 <div class="img-user">
-                    <img src="/SocialPet/src/assets/images/77fb45d1b36125547c4c2bf0640252b3.jpg" alt="">
+                    <img src="/src/assets/images/77fb45d1b36125547c4c2bf0640252b3.jpg" alt="">
                 </div>
                 <!--Nome do usuário-->
                 <strong>Gustavo Lima</strong>
@@ -65,20 +65,20 @@
                 <div class="icons-and-button">
                     <div class="icons">
                         <button class="btn-file-form" type="button" id="btnUploadImage"><i class="bi bi-card-image"></i></button>
-                        <input type="file" id="uploadImageInput" style="display: none;" accept="image/*" multiple>
+                        <input type="file" id="uploadImageInput" style="display: none;" accept="image/*, .mp4" multiple>
 
                         <button class="btn-file-form" type="button"><i class="bi bi-filetype-gif"></i></button>
                         <button class="btn-file-form" type="button"><i class="bi bi-camera-video"></i></button>
                     </div>
                     <!--BOTÃO DE PUBLICAR-->
-                    <button type="submit" class="btn-submit-form">Publicar</button>
+                    <button type="submit" class="btn-submit-form">Enviar</button>
                 </div>
             </form>
         </div>
 
     </main>
 
-    <aside class="sidebar-left">
+    <aside class="sidebar-left menu-desktop">
         <div class="user-profile"></div>
         <nav>
             <ul>
@@ -89,10 +89,20 @@
         </nav>
     </aside>
 
+    <div class="mobile-menu">
+        <nav>
+            <ul>
+                <li><a href="#home"><i class="bi bi-house-door"></i></a></li>
+                <li><a href="#pesquisar"><i class="bi bi-search"></i></a></li>
+                <li><a href="#profile"><i class="bi bi-person"></i></a></li>
+            </ul>
+        </nav>
+    </div>
+
     <aside class="sidebar-right">
         <h3>Quem Seguir</h3>
         <div class="suggestion">
-            <img src="/SocialPet/src/assets/images/dog-tyson.jpeg" alt="Sugestão de usuário">
+            <img src="/src/assets/images/dog-tyson.jpeg" alt="Sugestão de usuário">
             <div class="suggestion-info">
                 <strong>Maria Silva</strong>
                 <p>2 amigos em comum</p>
@@ -100,7 +110,7 @@
             <button>Seguir</button>
         </div>
         <div class="suggestion">
-            <img src="/SocialPet/src/assets/images/gato-grilado.jpg" alt="Sugestão de usuário">
+            <img src="/src/assets/images/gato-grilado.jpg" alt="Sugestão de usuário">
             <div class="suggestion-info">
                 <strong>João Santos</strong>
                 <p>1 amigo em comum</p>
@@ -109,42 +119,7 @@
         </div>
     </aside>
 
-    <div class="mobile-menu">
-        <nav>
-            <ul>
-                <li><a href="#home"><i class="bi bi-house-door"></i></a></li>
-                <li><a href="#pesquisar"><i class="bi bi-search"></i></a></li>
-                <li><button class="form-modal"><i class="bi bi-plus-circle"></i></button></li>
-                <li><a href="#profile"><i class="bi bi-person"></i></a></li>
-            </ul>
-        </nav>
-    </div>
-
-    <!-- Modal Mobile -->
-    <dialog class="formMobile">
-        <button class="close-modal">✕</button>
-        <form action="" class="formPost" id="formPostMobile">
-            <!-- Pré-visualização da imagem para Mobile -->
-            <div id="selectedImagePreviewMobile" style="display: none;">
-                <img id="imagePreviewMobile" src="" alt="Imagem Selecionada" style="max-width: 100%; height: auto;">
-            </div>
-            <textarea name="textarea" placeholder="Amo filhotes!" id="textareaMobile"></textarea>
-            <!--Ícones e botões do post-->
-            <div class="icons-and-button">
-                <div class="icons">
-                    <button class="btn-file-form" type="button" id="btnUploadImageMobile"><i class="bi bi-card-image"></i></button>
-                    <input type="file" id="uploadImageInputMobile" style="display: none;" accept="image/*" multiple>
-
-                    <button class="btn-file-form" type="button"><i class="bi bi-filetype-gif"></i></button>
-                    <button class="btn-file-form" type="button"><i class="bi bi-camera-video"></i></button>
-                </div>
-                <!--BOTÃO DE PUBLICAR-->
-                <button type="submit" class="btn-submit-form">Publicar</button>
-            </div>
-        </form>
-    </dialog>
-
-    <script type="module" src="/SocialPet/src/js/home.js"></script>
+    <script type="module" src="/src/js/home.js"></script>
 
 </body>
 
