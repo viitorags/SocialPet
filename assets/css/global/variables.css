@@ -1,7 +1,7 @@
 :root {
     --font-family: 'Outfit', sans-serif;
     --background-color: #fff0b7;
-    --header-bg-color: #fdf5d2;
+    --header-bg-color: rgb(253, 245, 210);
     --sidebar-left-bg-color: #fdf5d2;
     --sidebar-right-bg-color: #fdf5d2;
     --post-bg-color: #fff;

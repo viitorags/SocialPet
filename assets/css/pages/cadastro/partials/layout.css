@@ -32,9 +32,8 @@ body {
     text-align: center;
 }
 
-.left-sign img {
-    max-width: 60%;
-    height: auto;
+.left-sign > h1 {
+    color: var(--secondary-color);
 }
 
 .right-sign {
