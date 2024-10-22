@@ -1,0 +1,24 @@
+
+@media only screen and (max-width: 768px) {
+    .main-sign {
+        flex-direction: column;
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .left-sign {
+        display: none;
+    }
+
+    .right-sign {
+        width: 100vw;
+        height: auto;
+        padding: 0;
+    }
+
+    .card-sign {
+        width: 90%;
+        max-width: 350px;
+        box-shadow: none;
+    }
+}

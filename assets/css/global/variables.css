@@ -1,0 +1,16 @@
+:root {
+    --font-family: 'Outfit', sans-serif;
+    --background-color: #fff0b7;
+    --header-bg-color: #fdf5d2;
+    --sidebar-left-bg-color: #fdf5d2;
+    --sidebar-right-bg-color: #fdf5d2;
+    --post-bg-color: #fff;
+    --post-border-color: #ddd;
+    --post-hover-shadow: rgba(0, 0, 0, 0.2);
+    --text-color: #ff7043;
+    --dark-text-color: #757575;
+    --primary-color: #EC9A48;
+    --secondary-color: #8d6138;
+    --border-color: #ec9a48;
+    --hover-color: #d98840;
+}

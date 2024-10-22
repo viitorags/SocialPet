@@ -1,0 +1,20 @@
+/* _media.css */
+@media only screen and (max-width: 768px) {
+    .main-login {
+        background-image: url('/public/assets/img/Petfamily.gif');
+        background-repeat: no-repeat;
+    }
+
+    .left-login {
+        display: none;
+    }
+
+    .right-login {
+        width: 500px;
+        height: 599px;
+    }
+
+    .card-login {
+        width: 300px;
+    }
+}

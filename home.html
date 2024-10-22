@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./assets/css/pages/home/home.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <header>
+        <img src="./assets/images/global/logo - SocialPet correto.png" height="60">
+    </header> -->
+
+    <main>
+        <section class="feed">
+            <!-- Postagem 1 -->
+            <article class="post">
+
+                <div class="post-header">
+                    <img src="./assets/images/pages/home/gato-grilado.jpg" class="img-user-post" alt="Foto de perfil">
+                    <div class="user-info">
+                        <h3>MyKão Tyson</h3>
+                        <p>21h</p>
+                    </div>
+                </div>
+
+                <div class="post-content">
+                    <p>Texto da postagem</p>
+                    <img src="./assets/images/pages/home/cachorros-fofos0.jpg" alt="Imagem da postagem">
+                </div>
+
+                <div class="post-actions">
+                    <button type="button" class="files-post like"><img src="./assets/images/pages/home/icons/paw.svg"
+                            alt="Curtir"><span>10k</span></button>
+                    <button type="button" class="files-post direct"><img src="./assets/images/pages/home/icons/direct.svg"
+                            alt="Comentar"><span>827</span></button>
+                    <button type="button" class="files-post share"><img src="./assets/images/pages/home/icons/share.svg"
+                            alt="Compartilhar"><span>140</span></button>
+                </div>
+            </article>
+        </section>
+
+        <div class="new-post">
+            <!-- <div class="info-user">
+                Imagem do usuário
+                <div class="img-user">
+                    <img src="./assets/images/pages/home/77fb45d1b36125547c4c2bf0640252b3.jpg" alt="">
+                </div>
+                Nome do usuário
+                <strong>Gustavo Lima</strong>
+            </div> -->
+
+            <form action="" class="formPost" id="formPost">
+                <!-- Pré-visualização da imagem -->
+                <div id="selectedImagePreview" style="display: none;">
+                    <img id="imagePreview" src="" alt="Imagem Selecionada" style="max-width: 100%; height: auto;">
+                </div>
+                <textarea name="textarea" placeholder="Amo filhotes!" id="textarea"></textarea>
+
+                <!--Ícones e botões do post-->
+                <div class="icons-and-button">
+                    <div class="icons">
+                        <button class="btn-file-form" type="button" id="btnUploadImage"><i class="bi bi-card-image"></i></button>
+                        <input type="file" id="uploadImageInput" style="display: none;" accept="image/*, .mp4" multiple>
+
+                        <button class="btn-file-form" type="button"><i class="bi bi-filetype-gif"></i></button>
+                        <button class="btn-file-form" type="button"><i class="bi bi-camera-video"></i></button>
+                    </div>
+                    <!--BOTÃO DE PUBLICAR-->
+                    <button type="submit" class="btn-submit-form">Enviar</button>
+                </div>
+            </form>
+        </div>
+
+    </main>
+
+    <aside class="sidebar-left menu-desktop">
+        <div class="user-profile"></div>
+        <img src="./assets/images/global/logo - SocialPet correto.png">
+        <nav>
+            <ul>
+                <li><a href="#home"><i class="bi-house-door"></i>Home</a></li>
+                <li><a href=""><i class="bi bi-search"></i>Search</a></li>
+                <li><a href="#perfil"><i class="bi-person"></i>Perfil</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <div class="mobile-menu">
+        <nav>
+            <ul>
+                <li><a href="#home"><i class="bi bi-house-door"></i></a></li>
+                <li><a href="#pesquisar"><i class="bi bi-search"></i></a></li>
+                <li><a href="#profile"><i class="bi bi-person"></i></a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <aside class="sidebar-right">
+        <h3>Quem Seguir</h3>
+        <div class="suggestion">
+            <img src="./assets/images/pages/home/dog-tyson.jpeg" alt="Sugestão de usuário">
+            <div class="suggestion-info">
+                <strong>Maria Silva</strong>
+                <p>2 amigos em comum</p>
+            </div>
+            <button>Seguir</button>
+        </div>
+        <div class="suggestion">
+            <img src="./assets/images/pages/home/gato-grilado.jpg" alt="Sugestão de usuário">
+            <div class="suggestion-info">
+                <strong>João Santos</strong>
+                <p>1 amigo em comum</p>
+            </div>
+            <button>Seguir</button>
+        </div>
+    </aside>
+
+    <script type="module" src="./assets/js/pages/home/home.js"></script>
+
+</body>
+
+</html>

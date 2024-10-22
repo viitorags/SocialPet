@@ -1,0 +1,4 @@
+@import '../../global/global.css';
+@import 'partials/layout.css';
+@import 'partials/components.css';
+@import 'partials/media.css';

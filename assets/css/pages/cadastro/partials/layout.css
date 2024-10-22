@@ -1,0 +1,48 @@
+body {
+    font-family: var(--font-family);
+    font-style: normal;
+    background-color: var(--header-bg-color);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.main-sign {
+    width: 100vw;
+    height: auto;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 40px 0;
+}
+
+.left-sign {
+    width: 45vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+}
+
+.left-sign img {
+    max-width: 60%;
+    height: auto;
+}
+
+.right-sign {
+    width: 45vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+

@@ -1,0 +1,252 @@
+.feed {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 80px;
+}
+
+.post {
+    border: 1px solid var(--post-border-color);
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 20px;
+    background-color: var(--post-bg-color);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.post:hover {
+    box-shadow: 0 4px 12px var(--post-hover-shadow);
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.img-user-post {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.user-info h3 {
+    margin: 0;
+    font-size: 16px;
+    color: var(--text-color);
+}
+
+.user-info p {
+    margin: 0;
+    font-size: 12px;
+    color: var(--dark-text-color);
+}
+
+.post-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.post-content img {
+    align-self: center;
+    margin-top: 10px;
+    height: auto;
+    max-height: 400px;
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.post-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.files-post {
+    display: flex;
+    align-items: center;
+    background-color: #ffcc80;
+    border-radius: 4px;
+    padding: 8px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.files-post img {
+    margin-right: 5px;
+    border-radius: 0;
+    object-fit: contain;
+}
+
+.new-post {
+    background-color: #eee;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    position: sticky;
+    bottom: 0;
+    box-shadow: 0 0 6px var(--post-hover-shadow);
+}
+
+/* .info-user {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.img-user {
+    margin-right: 15px;
+}
+
+.img-user img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+} */
+
+#selectedImagePreview img {
+    max-width: 100%;
+    max-height: 100px !important;
+    object-fit: contain;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    resize: none;
+    font-size: 16px;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: var(--text-color);
+}
+
+.icons-and-button {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    align-items: center;
+}
+
+.icons button {
+    transition: transform 0.2s ease;
+    margin-right: 12px;
+}
+
+.icons button:hover {
+    transform: scale(1.1);
+}
+
+.btn-file-form i {
+    color: var(--primary-color);
+    font-size: 24px;
+}
+
+.btn-file-form,
+.files-post > img {
+    width: 20px;
+    height: 20px;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Botões */
+.btn-submit-form {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+.btn-submit-form:hover {
+    background-color: var(--hover-color);
+    transition: 0.5s ease-in-out;
+}
+
+/* Menu esquerdo */
+.sidebar-left nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.sidebar-left nav ul li a {
+    padding: 10px 0;
+    cursor: pointer;
+    color: var(--primary-color);
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.sidebar-left nav ul li:hover {
+    color: var(--hover-color);
+    transform: scale(1.1);
+}
+
+/* Menu direito */
+.sidebar-right h3 {
+    margin-bottom: 15px;
+    color: var(--text-color);
+}
+
+.suggestion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.suggestion img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.suggestion button {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.suggestion button:hover {
+    background-color: var(--hover-color);
+}
+
+.suggestion-info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.suggestion-info > p {
+    font-size: 14px;
+}
