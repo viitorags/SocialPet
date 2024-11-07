@@ -1,0 +1,126 @@
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+
+    /* Configuração básica */
+    main {
+        flex-direction: column-reverse;
+        height: auto;
+        width: 100%;
+        overflow-y: auto;
+        margin-bottom: 60px;
+    }
+
+    /* Ajuste do menu de navegação */
+    .column-left {
+        display: flex;
+        position: fixed;
+        align-items: center;
+        width: 100%;
+        justify-content: space-around;
+        bottom: 0;
+        height: 85px;
+        background-color: var(--header-bg-color);
+        text-align: center;
+        font-size: 28px;
+        width: 100%;
+        z-index: 10;
+    }
+
+    .column-left nav ul {
+        display: flex;
+        gap: 20px;
+    }
+
+    .column-left nav ul li a {
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .column-left nav,
+    ul li:hover {
+        transition: 0.5s ease-in-out;
+    }
+
+    .column-left nav ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 0;
+    }
+
+    .column-left nav ul li {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .column-left nav ul li a {
+        text-decoration: none;
+        color: var(--primary-color);
+        font-weight: bold;
+        transition: color 0.3s;
+    }
+
+    .column-left nav ul li button i {
+        text-decoration: none;
+        color: var(--primary-color);
+        font-weight: bold;
+        transition: color 0.3s;
+        font-size: 24px;
+    }
+
+    .column-left nav ul li a:hover {
+        color: var(--hover-color);
+    }
+
+    .column-left>img {
+        display: none;
+    }
+
+    /* Ajuste do contêiner de usuário */
+    .user {
+        width: 100%;
+        padding: 15px;
+    }
+
+    /* Info do usuário e seguidores */
+    .info-user {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 15px;
+    }
+
+    /* Ajuste da imagem do perfil */
+    .info-user img {
+        height: 80px;
+        width: 80px;
+    }
+
+    .info-user-text button {
+        text-align: center;
+        width: 100%;
+        font-size: 12px;
+    }
+
+    /* Estilo de posts para mobile */
+    .post-user {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    /* Ajuste das imagens de post */
+    .post img {
+        max-height: 70px;
+    }
+
+    /* Meus Pets */
+    .my-pets {
+        display: none;
+    }
+}
