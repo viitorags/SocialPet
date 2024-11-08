@@ -93,7 +93,7 @@ const addSubmitHandler = () => {
 
             let postContent = `
                 <div class="post-header">
-                    <img src="/assets/images/pages/home/77fb45d1b36125547c4c2bf0640252b3.jpg" class="img-user-post" alt="Foto de perfil">
+                    <img src="./assets/images/pages/home/77fb45d1b36125547c4c2bf0640252b3.jpg" class="img-user-post" alt="Foto de perfil">
                     <div class="user-info">
                         <h3>Gustavo Lima</h3>
                         <p>${time}</p>
@@ -113,8 +113,8 @@ const addSubmitHandler = () => {
                 </div>
                 <div class="post-actions">
                     <button type="button" class="files-post like"><i class="fa fa-paw like-icon"></i><span>${likes}k</span></button>
-                    <button type="button" class="files-post direct"><img src="/assets/images/pages/home/icons/direct.svg" alt="Comentar"><span>${comments}</span></button>
-                    <button type="button" class="files-post share"><img src="/assets/images/pages/home/icons/share.svg" alt="Compartilhar"><span>${shares}</span></button>
+                    <button type="button" class="files-post direct"><img src="./assets/images/pages/home/icons/direct.svg" alt="Comentar"><span>${comments}</span></button>
+                    <button type="button" class="files-post share"><img src="./assets/images/pages/home/icons/share.svg" alt="Compartilhar"><span>${shares}</span></button>
                 </div>
             `;
 
