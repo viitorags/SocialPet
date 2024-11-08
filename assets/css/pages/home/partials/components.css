@@ -74,10 +74,42 @@
     font-weight: bold;
 }
 
+.files-post {
+    font-size: 18px;
+    margin-right: 5px;
+    transition: transform 0.2s ease, color 0.2s ease;
+    cursor: pointer;
+}
+
 .files-post img {
     margin-right: 5px;
     border-radius: 0;
     object-fit: contain;
+}
+
+@keyframes beat {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.like-icon {
+    color: black;
+    margin-right: 5px;
+    transition: beat 0.3s ease;
+}
+
+.like-icon.liked {
+    color: #e74c3c;
+    animation: beat 0.3s ease;
 }
 
 .new-post {
@@ -151,7 +183,7 @@ textarea:focus {
 }
 
 .btn-file-form,
-.files-post > img {
+.files-post>img {
     width: 20px;
     height: 20px;
 }
@@ -247,6 +279,6 @@ button:hover {
     text-align: center;
 }
 
-.suggestion-info > p {
+.suggestion-info>p {
     font-size: 14px;
 }
