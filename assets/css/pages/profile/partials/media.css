@@ -123,7 +123,9 @@
         font-size: 1rem;
     }
 
-    .pets img {
+    .my-pets .pets img {
         display: flex;
+        max-width: 50px;
+        max-height: 50px;
     }
 }
