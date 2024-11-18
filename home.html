@@ -11,9 +11,29 @@
 </head>
 
 <body>
-    <!-- <header>
-        <img src="./assets/images/global/logo - SocialPet correto.png" height="60">
-    </header> -->
+
+    <header class="header">
+        <!-- Botão do menu hamburguer -->
+        <button class="menu-toggle" id="menuToggle">
+            <i class="fa fa-bars open-menu"></i>
+            <i class="fa fa-times close-menu"></i>
+        </button>
+        <img src="./assets/images/global/logo_SocialPet_correto.png" alt="">
+    </header>
+    <!-- Menu lateral -->
+    <aside class="sidebar-left" id="menu">
+        <div class="user-profile"></div>
+        <img src="./assets/images/global/logo_SocialPet_correto.png">
+        <nav>
+            <ul>
+                <li><a href="./home.html"><i class="bi-house-door"></i>Home</a></li>
+                <li><a href=""><i class="bi bi-search"></i>Search</a></li>
+                <li><a href="./profile.html"><i class="bi-person"></i>Perfil</a></li>
+                <li><a href="#"><i class="bi bi-globe"></i>ONGs</a></li>
+                <li><a href="#"><i class="bi bi-shop"></i>Market</a></li>
+            </ul>
+        </nav>
+    </aside>
 
     <main>
         <section class="feed">
@@ -36,71 +56,43 @@
                 <div class="post-actions">
                     <button type="button" class="files-post like"><i class="fa fa-paw like-icon"></i>
                         <span>10k</span></button>
-                    <button type="button" class="files-post direct"><img src="./assets/images/pages/home/icons/direct.svg"
-                            alt="Comentar"><span>827</span></button>
+                    <button type="button" class="files-post direct"><img
+                            src="./assets/images/pages/home/icons/direct.svg" alt="Comentar"><span>827</span></button>
                     <button type="button" class="files-post share"><img src="./assets/images/pages/home/icons/share.svg"
                             alt="Compartilhar"><span>140</span></button>
                 </div>
             </article>
         </section>
+        <button class="button-new-post"><i class="fa fa-plus"></i></button>
+            
+            <dialog>
+                <div class="new-post">
+                    <form action="" class="formPost" id="formPost">
+                        <!-- Pré-visualização da imagem -->
+                        <div id="selectedImagePreview" style="display: none;">
+                            <img id="imagePreview" src="" alt="Imagem Selecionada"
+                                style="max-width: 100%; height: auto;">
+                        </div>
+                        <textarea name="textarea" placeholder="Amo filhotes!" id="textarea"></textarea>
 
-        <div class="new-post">
-            <!-- <div class="info-user">
-                Imagem do usuário
-                <div class="img-user">
-                    <img src="./assets/images/pages/home/77fb45d1b36125547c4c2bf0640252b3.jpg" alt="">
+                        <!--Ícones e botões do post-->
+                        <div class="icons-and-button">
+                            <div class="icons">
+                                <button class="btn-file-form" type="button" id="btnUploadImage"><i
+                                        class="bi bi-card-image"></i></button>
+                                <input type="file" id="uploadImageInput" style="display: none;" accept="image/*, .mp4"
+                                    multiple>
+
+                                <button class="btn-file-form" type="button"><i class="bi bi-filetype-gif"></i></button>
+                                <button class="btn-file-form" type="button"><i class="bi bi-camera-video"></i></button>
+                            </div>
+                            <!--BOTÃO DE PUBLICAR-->
+                            <button type="submit" class="btn-submit-form">Enviar</button>
+                        </div>
+                    </form>
                 </div>
-                Nome do usuário
-                <strong>Gustavo Lima</strong>
-            </div> -->
-
-            <form action="" class="formPost" id="formPost">
-                <!-- Pré-visualização da imagem -->
-                <div id="selectedImagePreview" style="display: none;">
-                    <img id="imagePreview" src="" alt="Imagem Selecionada" style="max-width: 100%; height: auto;">
-                </div>
-                <textarea name="textarea" placeholder="Amo filhotes!" id="textarea"></textarea>
-
-                <!--Ícones e botões do post-->
-                <div class="icons-and-button">
-                    <div class="icons">
-                        <button class="btn-file-form" type="button" id="btnUploadImage"><i class="bi bi-card-image"></i></button>
-                        <input type="file" id="uploadImageInput" style="display: none;" accept="image/*, .mp4" multiple>
-
-                        <button class="btn-file-form" type="button"><i class="bi bi-filetype-gif"></i></button>
-                        <button class="btn-file-form" type="button"><i class="bi bi-camera-video"></i></button>
-                    </div>
-                    <!--BOTÃO DE PUBLICAR-->
-                    <button type="submit" class="btn-submit-form">Enviar</button>
-                </div>
-            </form>
-        </div>
-
+            </dialog>
     </main>
-
-    <aside class="sidebar-left menu-desktop">
-        <div class="user-profile"></div>
-        <img src="./assets/images/global/logo_SocialPet_correto.png">
-        <nav>
-            <ul>
-                <li><a href="./home.html"><i class="bi-house-door"></i>Home</a></li>
-                <li><a href=""><i class="bi bi-search"></i>Search</a></li>
-                <li><a href="./profile.html"><i class="bi-person"></i>Perfil</a></li>
-<li><a href="#"><i class="bi bi-globe"></i>ONGs</a></li>
-<li><a href="#"><i class="bi bi-shop"></i>Market</a></li>
-            </ul>
-        </nav>
-    </aside>
-
-    <!-- <div class="mobile-menu">
-        <nav>
-            <ul>
-                <li><a href="#home"><i class="bi bi-house-door"></i></a></li>
-                <li><a href="#pesquisar"><i class="bi bi-search"></i></a></li>
-                <li><a href="./profile.html"><i class="bi bi-person"></i></a></li>
-            </ul>
-        </nav>
-    </div> -->
 
     <aside class="sidebar-right">
         <h3>Quem Seguir</h3>

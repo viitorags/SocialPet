@@ -135,3 +135,13 @@ addFileInputHandler();
 addUploadButtonHandler(); // Adiciona o manipulador de clique no botão de upload
 addSubmitHandler();
 addLikePost();
+
+// Seleciona o botão do menu e o menu lateral
+const menuToggle = document.getElementById('menuToggle');
+const sidebarLeft = document.getElementById('menu');
+
+// Adiciona evento de clique no botão hamburguer
+menuToggle.addEventListener('click', () => {
+    sidebarLeft.classList.toggle('active'); // Alterna visibilidade do menu
+    menuToggle.classList.toggle('active'); // Alterna ícones no botão
+});

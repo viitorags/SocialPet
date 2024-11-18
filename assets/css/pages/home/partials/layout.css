@@ -11,40 +11,58 @@ body {
     overflow-x: hidden;
 }
 
-/* header {
-    height: 70px;
-    background-color: var(--header-bg-color);
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-} */
-
-/* header img {
-    height: 60px;
-    border-radius: 2px;
-} */
-
 main {
     grid-area: main;
     background-color: #eee;
     padding: 20px;
 }
 
+header {
+    display: none;
+}
+
 .sidebar-left {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
     grid-area: sidebar-left;
     background-color: var(--header-bg-color);
     text-align: left;
     font-size: 24px;
+    height: 100%;
 }
 
-.sidebar-left nav ul li {
-    margin-bottom: 8px;
+/* Menu lateral ajustado no mobile */
+.sidebar-left.hidden {
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+.sidebar-left.active {
+    transform: translateX(0);
+}
+
+/* Botão de menu no mobile */
+.menu-toggle {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1100;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: none; /* Apenas aparece no mobile */
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-toggle i {
+    color: #333;
 }
 
 .sidebar-left>img {
@@ -57,62 +75,4 @@ main {
     padding: 20px;
     background-color: var(--header-bg-color);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.mobile-menu {
-    grid-area: footer;
-    background-color: var(--header-bg-color);
-    padding: 20px;
-    text-align: center;
-    font-size: 28px;
-}
-
-.mobile-menu,
-ul li:hover {
-    transition: 0.5s ease-in-out;
-}
-
-
-.mobile-menu {
-    display: none;
-    height: 90px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: var(--sidebar-right-bg-color);
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.mobile-menu nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin: 0;
-}
-
-.mobile-menu nav ul li {
-    text-align: center;
-    padding: 10px;
-}
-
-.mobile-menu nav ul li a {
-    text-decoration: none;
-    color: var(--primary-color);
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-.mobile-menu nav ul li button i {
-    text-decoration: none;
-    color: var(--primary-color);
-    font-weight: bold;
-    transition: color 0.3s;
-    font-size: 24px;
-}
-
-.mobile-menu nav ul li a:hover {
-    color: var(--hover-color);
 }
