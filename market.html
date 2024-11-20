@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/pages/home/home.css">
+    <link rel="stylesheet" href="assets/css/pages/marketplace/marketplace.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <!-- Botão do menu hamburguer -->
+        <button class="menu-toggle" id="menuToggle">
+            <i class="fa fa-bars open-menu"></i>
+            <i class="fa fa-times close-menu"></i>
+        </button>
+        <img src="./assets/images/global/logo_SocialPet_correto.png" alt="">
+    </header>
+    <!-- Menu lateral -->
+    <aside class="sidebar-left" id="menu">
+        <div class="user-profile"></div>
+        <img src="./assets/images/global/logo_SocialPet_correto.png">
+        <nav>
+            <ul>
+                <li><a href="./home.html"><i class="bi-house-door"></i>Home</a></li>
+                <li><a href=""><i class="bi bi-search"></i>Search</a></li>
+                <li><a href="./profile.html"><i class="bi-person"></i>Perfil</a></li>
+                <li><a href="#"><i class="bi bi-globe"></i>ONGs</a></li>
+                <li><a href="#"><i class="bi bi-shop"></i>Market</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main>
+        <section class="vitrine">
+            <h2>Vitrine</h2>
+            
+                <div id="produtos">
+                    
+                </div>
+            
+            
+        </section>
+        <button class="button-new-post"><i class="fa fa-plus"></i></button>
+            
+            
+    </main>
+
+    <!--<aside class="sidebar-right">
+        
+    </aside>
+    -->
+    <aside class="sidebar-right">
+        <h3>Carrinho</h3>
+        <div id="carrinho">
+
+        </div>
+        
+    </aside>
+    <script type="module" src="assets/js/pages/marketplace/marketplace.js"></script>
+    
+
+    <script type="module" src="./assets/js/pages/home/home.js"></script>
+
+</body>
+
+</html>
