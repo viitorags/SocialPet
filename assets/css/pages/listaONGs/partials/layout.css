@@ -1,0 +1,36 @@
+body {
+    background-color: #eee;
+}
+
+main {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+header {
+    display: none;
+}
+
+.column-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 40vh;
+    height: 100%;
+    background-color: var(--sidebar-left-bg-color);
+    z-index: 2;
+}
+
+/* Menu lateral ajustado no mobile */
+.column-left.hidden {
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+.column-left.active {
+    transform: translateX(0);
+}
+

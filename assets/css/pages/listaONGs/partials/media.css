@@ -1,0 +1,125 @@
+@media (max-width: 768px) {
+
+    /* Configuração básica */
+    main {
+        flex-direction: column-reverse;
+        height: auto;
+        width: 100%;
+        overflow-y: auto;
+        margin-bottom: 60px;
+    }
+
+    /* Ajuste do menu de navegação */
+    header {
+        grid-area: header;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--header-bg-color);
+        height: 80px;
+        width: 100%;
+        position: sticky;
+        top: 0;
+        z-index: 4;
+    }
+
+    header img {
+        width: 100px;
+    }
+
+    #menu {
+        margin-top: 80px;
+    }
+
+    /* Ajuste do menu de navegação */
+    .menu-toggle {
+        display: flex;
+        background-color: var(--header-bg-color);
+    }
+
+    .menu-desktop {
+        position: fixed;
+        left: -100%;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .close-menu {
+        display: none;
+    }
+
+    .menu-toggle.active .open-menu {
+        display: none;
+    }
+    
+    .menu-toggle.active .close-menu {
+        display: inline-block;
+    }    
+
+    .column-left {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 150px;
+        height: 100%;
+        transform: translateX(-100%);
+        background-color: var(--header-bg-color);
+        transition: transform 0.3s ease;
+    }
+
+    .column-left img {
+        display: none;
+    }
+
+    /* Ajuste do carrossel */
+    .ong-wrapper {
+        height: 200px;
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .wrapper-item img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .swiper-slide {
+        width: 80%;
+    }
+
+    .wrapper-item p {
+        font-size: 16px;
+    }
+
+    /* Cartões menores no mobile */
+    .ong-list {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 10px;
+    }
+
+    .ong-item {
+        padding: 15px;
+    }
+
+    .ong-info img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .ong-info h3 {
+        font-size: 18px;
+    }
+
+    .ong-mission p {
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .swiper-slide {
+        width: 100%;
+    }
+}
