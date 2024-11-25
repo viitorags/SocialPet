@@ -7,11 +7,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    overflow: hidden;
+    min-height: 100vh;
+    overflow: auto;
+    flex-direction: column;
 }
 
 .main-sign {
+    flex: 1;
     width: 100vw;
     height: auto;
     min-height: 80vh;
@@ -43,5 +45,157 @@ body {
     align-items: center;
     padding: 20px;
     box-sizing: border-box;
+}
+/* _components.css */
+.card-sign {
+    width: 100%;
+    max-width: 400px;
+    padding: 25px 30px;
+    background: #FFF;
+    border-radius: 8px;
+    box-shadow: 0px 10px 40px rgba(236, 154, 72, 0.35);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-sign h2 {
+    color: #060606;
+    font-weight: 600;
+}
+
+.textfield {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+}
+
+.textfield label {
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.textfield input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    background: #EEE;
+    color: #000;
+    font-size: 14px;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.textfield input:focus {
+    border-color: var(--hover-color);
+}
+
+.textfield a {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.textfield a:hover {
+    text-decoration: underline;
+}
+
+.btn-sign {
+    background-color: var(--primary-color);
+    width: 100%;
+    padding: 14px 0;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #FFF;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-sign:hover {
+    background-color: var(--hover-color);
+    transition: 0.5s ease-in-out;
+}
+
+@media only screen and (max-width: 768px) {
+    .main-sign {
+        flex-direction: column;
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .left-sign {
+        display: none;
+    }
+
+    .right-sign {
+        width: 100vw;
+        height: auto;
+        padding: 0;
+    }
+
+    .card-sign {
+        width: 90%;
+        max-width: 350px;
+        box-shadow: none;
+    }
+}
+footer
+{
+    width: 100%; 
+    background-color: #FFF9F0; 
+    color: #ebe0e0; 
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    position: relative; 
+    bottom: 0;
+    
+}
+footer .boxs
+{
+    width: 320px;
+    min-height: 150px;
+    padding: 20px;
+    float: none;
+}
+footer .boxs:nth-child(4)
+{
+    width: 400px;
+}
+.boxs h2
+{
+    color: #cb6f0d;
+    margin-bottom: 20px;
+}
+.boxs ul li
+{
+    margin: 10px 0px;
+    list-style: none;
+    
+}
+.boxs ul li a
+{
+    color: #434141;
+    text-decoration: none;
+}
+.boxs ul li a:hover
+{
+    color: #cb6f0d;
+
+}
+.boxs p
+{
+    color: #FFF;
+    text-align: justify;
 }
 
