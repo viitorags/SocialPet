@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Pet</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/pages/listaONGs/listaONGs.css">
+</head>
+
+<body>
+    <header class="header">
+        <button class="menu-toggle" id="menuToggle">
+            <i class="fa fa-bars open-menu"></i>
+            <i class="fa fa-times close-menu"></i>
+        </button>
+        <img src="./assets/images/global/logo_SocialPet_correto.png" alt="Logo SocialPet">
+    </header>
+
+    <main class="container">
+        <div class="column-left" id="menu">
+            <img src="./assets/images/global/logo_SocialPet_correto.png" alt="Logo do Site">
+            <nav class="menu">
+                <ul>
+                    <li><a href="./home.html"><i class="bi bi-house-door"></i>Home</a></li>
+                    <li><a href=""><i class="bi bi-search"></i>Search</a></li>
+                    <li><a href="./profile.html"><i class="bi bi-person"></i>Perfil</a></li>
+                    <li><a href="./listaONGs.html"><i class="bi bi-globe"></i>ONGs</a></li>
+                    <li><a href="#"><i class="bi bi-shop"></i>Market</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="ONGs">
+            <div class="ongs">
+                <div class="text">
+                    <p>Principais ONGs Parceiras</p>
+                </div>
+                <div class="ong-wrapper swiper" id="ongWrapper">
+                    <div class="wrapper-list swiper-wrapper">
+                        
+                    </div>
+
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+                
+                
+                <div class="text" style="margin-top: 20px;">
+                    <p>Todas as ONGs</p>
+                </div>
+
+                <div class="ong-list" id="ongList">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/js/pages/listaONGs/listaONGs.js"></script>
+</body>
+
+</html>
