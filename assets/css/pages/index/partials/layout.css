@@ -2,7 +2,7 @@ body {
     font-family: var(--font-family);
     font-style: normal;
     background: var(--header-bg-color);
-    overflow: hidden;
+    overflow: auto;
 }
 
 .main-login {
@@ -24,7 +24,7 @@ body {
     text-align: center;
 }
 
-.left-login > h1 {
+.left-login>h1 {
     color: var(--secondary-color);
 }
 
@@ -34,4 +34,17 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+footer {
+    width: 100%;
+    background-color: #FFF9F0;
+    color: #ebe0e0;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    bottom: 0;
 }
