@@ -2,31 +2,31 @@
 const items = [
     {
         id: 0,
-        nome: 'racao-cao-20kg',
+        nome: 'Ração cão 20kg',
         img: 'assets/images/pages/marketplace/premier_formula_racas_grandes_para_caes_adultos_20kg_frango.webp',
-        preco: 50.97,
+        preco: 20.97,
         quantidade: 0,
 
     },
     {
         id: 1,
-        nome: 'racao-gato-10kg',
+        nome: 'Ração gato 10kg',
         img: 'assets/images/pages/marketplace/racao gato 10kg.jpg',
-        preco: 50.78,
+        preco: 25.78,
         quantidade: 0,
         
     },
     {
         id: 2,
-        nome: 'racao-gato-premium',
+        nome: 'Ração gato premium',
         img: 'assets/images/pages/marketplace/racao-gato-premium-10kg.jpg',
-        preco: 50.99,
+        preco: 87.99,
         quantidade: 0,
         
     },
     {
         id: 3,
-        nome: 'racao-cao-20kg',
+        nome: 'Ração cão 20kg',
         img: 'assets/images/pages/marketplace/premier_formula_racas_grandes_para_caes_adultos_20kg_frango.webp',
         preco: 50.99,
         quantidade: 0,
@@ -34,17 +34,17 @@ const items = [
     },
     {
         id: 4,
-        nome: 'racao-gato-10kg',
+        nome: 'Ração gato 10kg',
         img: 'assets/images/pages/marketplace/racao gato 10kg.jpg',
-        preco: 50.99,
+        preco: 20.99,
         quantidade: 0,
         
     },
     {
         id: 5,
-        nome: 'racao-gato-premium',
+        nome: 'Ração gato premium',
         img: 'assets/images/pages/marketplace/racao-gato-premium-10kg.jpg',
-        preco: 50.99,
+        preco: 87.99,
         quantidade: 0,
         
     },
