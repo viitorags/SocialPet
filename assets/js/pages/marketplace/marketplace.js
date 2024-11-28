@@ -104,3 +104,12 @@ for(var i = 0; i < links.length; i++) {
         /*return false;*/
     })
 }
+
+const menuToggle = document.getElementById('menuToggle');
+const sidebarLeft = document.getElementById('menu');
+
+// Adiciona evento de clique no botão hamburguer
+menuToggle.addEventListener('click', () => {
+    sidebarLeft.classList.toggle('active'); // Alterna visibilidade do menu
+    menuToggle.classList.toggle('active'); // Alterna ícones no botão
+});

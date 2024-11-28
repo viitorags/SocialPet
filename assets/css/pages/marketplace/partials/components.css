@@ -1,0 +1,127 @@
+.pesquisa {
+    margin-top: 10px;
+}
+
+.pesquisa h4 {
+    margin: 5px;
+}
+
+.pesquisa #barra-pesquisa {
+    width: 100%;
+    height: 45px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    resize: none;
+    font-size: 16px;
+}
+
+.pesquisa #barra-pesquisa:focus {
+    outline: none;
+    border-color: var(--text-color);
+}
+
+.vitrine {
+    display: flex;
+    flex-direction: column;
+}
+
+#produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding-bottom: 80px;
+}
+
+.produto-single {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--post-border-color);
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 20px;
+    background-color: var(--post-bg-color);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+
+
+}
+
+.produto-single img.produto-img {
+    /*border: 2px solid red;*/
+    align-self: center;
+    margin-top: 10px;
+    height: 100%;
+    max-height: 400px;
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.produto-single p.produto-nome {
+    /*border: 2px solid red;*/
+    justify-self: flex-start;
+    align-self: flex-start;
+    color: #ffa218;
+}
+
+.produto-single .produto-footer {
+    padding: 4px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.produto-single p.produto-preco {
+    /*border: 2px solid red;*/
+    color: rgb(0, 92, 0);
+}
+
+.produto-single a.carrinho-btn {
+    /*border: 2px solid red;*/
+    text-decoration: none;
+    color: rgb(0, 158, 0);
+}
+
+#carrinho {
+    position: fixed;
+    top: 40px;
+    padding: 5px;
+}
+
+* Menu esquerdo */
+.menu-toggle {
+    display: none;
+}
+
+.sidebar-left nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-left nav ul li {
+    margin-bottom: 15px;
+}
+
+.sidebar-left nav ul li a {
+    padding: 10px 0;
+    cursor: pointer;
+    color: var(--primary-color);
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.sidebar-left nav ul li a i{
+    margin-bottom: 20px;
+}
+
+.sidebar-left nav ul li:hover {
+    color: var(--hover-color);
+    transform: scale(1.1);
+}
+
+/* Menu direito */
+.sidebar-right h3 {
+    position: fixed;
+    margin-bottom: 15px;
+    color: var(--text-color);
+}
