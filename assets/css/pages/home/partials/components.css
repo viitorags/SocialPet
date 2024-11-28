@@ -253,6 +253,7 @@ button:hover {
 
 /* Menu direito */
 .sidebar-right h3 {
+    position: fixed;
     margin-bottom: 15px;
     color: var(--text-color);
 }
