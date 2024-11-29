@@ -23,7 +23,7 @@ const postagens = [
         nome: 'Rannyara',
         perfil: '',
         texto: 'Texto do post 2',
-        img: '/SocialPet/images/pages/home/postEstaticos/pexels-ezz7-979503.jpg',
+        img: '/SocialPet/assets/images/pages/home/postEstaticos/pexels-ezz7-979503.jpg',
         horario: getRandomNumber(1,24),
         likes: getRandomNumber(1,13),
         comments: getRandomNumber(50,150),
