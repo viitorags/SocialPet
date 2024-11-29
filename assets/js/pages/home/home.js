@@ -1,17 +1,11 @@
 // Seleciona elementos do DOM
 const form = document.getElementById('formPost');
 const textarea = document.getElementById('textarea');
-const fileInputImage = document.getElementById('uploadImageInput');
-const fileInputGif = document.getElementById('uploadGifInput');
-const fileInputVideo = document.getElementById('uploadVideoInput');
-const btnUploadImage = document.getElementById('btnUploadImage');
-const btnUploadGif = document.getElementById('btnUploadGif');
-const btnUploadVideo = document.getElementById('btnUploadVideo');
+const fileInput = document.getElementById('uploadMediaInput');
+const btnUpload = document.getElementById('btnUploadImage');
 const ulPost = document.querySelector('section.feed');
 const previewContainer = document.getElementById('selectedImagePreview');
-let selectedImages = [];
-let selectedGifs = [];
-let selectedVideos = [];
+let selectedMedia = [];
 
 // Função para adicionar o evento de curtida nos posts
 const addLikePost = () => {
@@ -42,75 +36,47 @@ const getTime = () => {
 // Função para gerar números aleatórios em um intervalo
 const getRandomNumber = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
-// Função para gerenciar os uploads de imagens, gifs e vídeos
-const handleFileSelect = (inputElement, type) => {
-    inputElement.addEventListener('change', (event) => {
+// Função para gerenciar os uploads de mídia (imagens, GIFs, vídeos)
+const handleFileSelect = () => {
+    fileInput.addEventListener('change', (event) => {
         const files = event.target.files;
-        let selectedFiles = [];
+        selectedMedia = [];
         previewContainer.innerHTML = "";
 
         Array.from(files).forEach((file) => {
             const reader = new FileReader();
             reader.onload = (e) => {
-                if (type === 'image') {
-                    selectedFiles.push(e.target.result);
-                    const imgElement = document.createElement('img');
-                    imgElement.src = e.target.result;
-                    imgElement.style.maxWidth = "100%";
-                    imgElement.style.maxHeight = "300px";
-                    imgElement.style.objectFit = "contain";
-                    imgElement.style.borderRadius = "8px";
-                    imgElement.style.marginTop = "10px";
-                    previewContainer.appendChild(imgElement);
-                } else if (type === 'gif') {
-                    selectedFiles.push(e.target.result);
-                    const gifElement = document.createElement('img');
-                    gifElement.src = e.target.result;
-                    gifElement.style.maxWidth = "100%";
-                    gifElement.style.maxHeight = "300px";
-                    gifElement.style.objectFit = "contain";
-                    gifElement.style.borderRadius = "8px";
-                    gifElement.style.marginTop = "10px";
-                    previewContainer.appendChild(gifElement);
-                } else if (type === 'video') {
-                    selectedFiles.push(e.target.result);
-                    const videoElement = document.createElement('video');
-                    videoElement.src = e.target.result;
-                    videoElement.style.maxWidth = "100%";
-                    videoElement.style.maxHeight = "300px";
-                    videoElement.style.objectFit = "contain";
-                    videoElement.controls = true; // Adiciona controles de vídeo
-                    previewContainer.appendChild(videoElement);
+                selectedMedia.push({ type: file.type, src: e.target.result });
+                let mediaElement;
+
+                if (file.type.startsWith('image/')) {
+                    mediaElement = document.createElement('img');
+                } else if (file.type.startsWith('video/')) {
+                    mediaElement = document.createElement('video');
+                    mediaElement.controls = true; // Adiciona controles para vídeos
+                } else {
+                    return; // Ignora tipos não suportados
                 }
+
+                mediaElement.src = e.target.result;
+                mediaElement.style.maxWidth = "100%";
+                mediaElement.style.maxHeight = "300px";
+                mediaElement.style.objectFit = "contain";
+                mediaElement.style.borderRadius = "8px";
+                mediaElement.style.marginTop = "10px";
+                previewContainer.appendChild(mediaElement);
             };
             reader.readAsDataURL(file);
         });
 
         if (files.length > 0) previewContainer.style.display = 'block';
-
-        // Armazena as imagens, gifs ou vídeos selecionados para o envio posterior
-        if (type === 'image') {
-            selectedImages = selectedFiles;
-        } else if (type === 'gif') {
-            selectedGifs = selectedFiles;
-        } else if (type === 'video') {
-            selectedVideos = selectedFiles;
-        }
     });
 };
 
 // Função para abrir o seletor de arquivos ao clicar no botão de upload
 const addUploadButtonHandler = () => {
-    btnUploadImage.addEventListener('click', () => {
-        fileInputImage.click();
-    });
-
-    btnUploadGif.addEventListener('click', () => {
-        fileInputGif.click();
-    });
-
-    btnUploadVideo.addEventListener('click', () => {
-        fileInputVideo.click();
+    btnUpload.addEventListener('click', () => {
+        fileInput.click();
     });
 };
 
@@ -141,17 +107,13 @@ const addSubmitHandler = () => {
                     <p>${textarea.value}</p>
             `;
 
-            // Adiciona as imagens, gifs ou vídeos selecionados
-            selectedImages.forEach((image) => {
-                postContent += `<img src="${image}" alt="Imagem da postagem" style="max-width: 100%; max-height: 400px; object-fit: contain; margin-top: 10px;">`;
-            });
-
-            selectedGifs.forEach((gif) => {
-                postContent += `<img src="${gif}" alt="GIF da postagem" style="max-width: 100%; max-height: 400px; object-fit: contain; margin-top: 10px;">`;
-            });
-
-            selectedVideos.forEach((video) => {
-                postContent += `<video src="${video}" style="max-width: 100%; max-height: 400px; object-fit: contain; margin-top: 10px;" controls></video>`;
+            // Adiciona a mídia selecionada (imagens e vídeos)
+            selectedMedia.forEach((media) => {
+                if (media.type.startsWith('image/')) {
+                    postContent += `<img src="${media.src}" alt="Imagem da postagem" style="max-width: 100%; max-height: 400px; object-fit: contain; margin-top: 10px;">`;
+                } else if (media.type.startsWith('video/')) {
+                    postContent += `<video src="${media.src}" style="max-width: 100%; max-height: 400px; object-fit: contain; margin-top: 10px;" controls></video>`;
+                }
             });
 
             postContent += `
@@ -170,9 +132,7 @@ const addSubmitHandler = () => {
             textarea.value = "";
             previewContainer.innerHTML = "";
             previewContainer.style.display = 'none';
-            selectedImages = [];
-            selectedGifs = [];
-            selectedVideos = [];
+            selectedMedia = [];
         } else {
             alert('Verifique o campo digitado. O texto deve ter pelo menos 3 caracteres.');
         }
@@ -180,9 +140,7 @@ const addSubmitHandler = () => {
 };
 
 // Chama as funções de gerenciamento
-handleFileSelect(fileInputImage, 'image');
-handleFileSelect(fileInputGif, 'gif');
-handleFileSelect(fileInputVideo, 'video');
+handleFileSelect();
 addUploadButtonHandler();
 addSubmitHandler();
 addLikePost();
