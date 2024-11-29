@@ -3,6 +3,7 @@
     flex-direction: column;
     gap: 20px;
     padding-bottom: 80px;
+    overflow-y: auto;
 }
 
 .post {
@@ -253,7 +254,6 @@ button:hover {
 
 /* Menu direito */
 .sidebar-right h3 {
-    position: fixed;
     margin-bottom: 15px;
     color: var(--text-color);
 }

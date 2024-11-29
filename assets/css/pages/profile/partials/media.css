@@ -107,7 +107,8 @@
 
     /* Ajuste das imagens de post */
     .post img {
-        max-height: 70px;
+        max-width: 100px;
+        max-height: 100px;
     }
 
     .my-pets {
