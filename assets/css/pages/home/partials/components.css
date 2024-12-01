@@ -68,10 +68,9 @@
 .files-post {
     display: flex;
     align-items: center;
-    background-color: #ffcc80;
     border-radius: 4px;
     padding: 8px;
-    color: #fff;
+    color: #333;
     font-weight: bold;
 }
 

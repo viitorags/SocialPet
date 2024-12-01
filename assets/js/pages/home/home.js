@@ -120,7 +120,7 @@ const addSubmitHandler = () => {
                 </div>
                 <div class="post-actions">
                     <button type="button" class="files-post like"><i class="fa fa-paw like-icon"></i><span>${likes}k</span></button>
-                    <button type="button" class="files-post direct"><img src="/SocialPet/assets/images/pages/home/icons/direct.svg" alt="Comentar"><span>${comments}</span></button>
+                    <button type="button" class="files-post direct"><img src="/SocialPet/assets/images/pages/home/icons/chat.svg" alt="Comentar"><span>${comments}</span></button>
                     <button type="button" class="files-post share"><img src="/SocialPet/assets/images/pages/home/icons/share.svg" alt="Compartilhar"><span>${shares}</span></button>
                 </div>
             `;
