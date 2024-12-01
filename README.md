@@ -1,6 +1,15 @@
-# Estrutura do Projeto
+# Projeto de Aplicação Web
 
-Este projeto é uma aplicação web desenvolvida com HTML, CSS, JavaScript e Node.js. A estrutura do projeto é organizada de maneira a facilitar a manutenção, escalabilidade e entendimento do código. Abaixo, descrevemos a organização das pastas e seus conteúdos.
+Este projeto é uma aplicação web desenvolvida com HTML, CSS, JavaScript e Node.js como parte de um trabalho de faculdade. Ele está sendo desenvolvido por uma equipe de 5 pessoas.
+
+Cada integrante possui seu perfil no GitHub, que pode ser acessado pelos links a seguir:
+- [Lorrany](https://github.com/rannyara)
+- [Gustavo](https://github.com/Lima-projects)
+- [Ruan](https://github.com/ruanout1)
+- [Adriano](https://github.com/Adrianotorres411)
+- [Caique](https://github.com/caiquemrc)
+
+---
 
 ## Estrutura de Pastas
 
@@ -68,7 +77,3 @@ Este projeto é uma aplicação web desenvolvida com HTML, CSS, JavaScript e Nod
 - **server.js**: Arquivo principal do servidor, onde a aplicação é inicializada e as rotas são configuradas.
 
 - **\*.html**: As páginas HTML que compõem a interface do usuário da aplicação.
-
-## Contribuição
-
-Se você quiser contribuir para este projeto, fique à vontade para abrir uma **issue** ou fazer um **pull request**. Estamos abertos a sugestões e melhorias!
