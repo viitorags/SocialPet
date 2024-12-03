@@ -59,9 +59,21 @@
     border-radius: 8px;
 }
 
+.post-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .post-actions {
     display: flex;
     justify-content: space-around;
+    margin-top: 10px;
+}
+
+.save-post {
+    display: flex;
+    align-items: center;
     margin-top: 10px;
 }
 
