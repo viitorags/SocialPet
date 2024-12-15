@@ -243,6 +243,7 @@ button:hover {
 
 .sidebar-left nav ul li {
     margin-bottom: 15px;
+    transition: transform 0.3s ease;
 }
 
 .sidebar-left nav ul li a {
@@ -251,11 +252,11 @@ button:hover {
     color: var(--primary-color);
     font-weight: bold;
     text-decoration: none;
-    transition: color 0.3s ease;
 }
 
 .sidebar-left nav ul li a i{
     margin-bottom: 20px;
+    margin-right: 5px;
 }
 
 .sidebar-left nav ul li:hover {

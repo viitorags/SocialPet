@@ -2,7 +2,7 @@ body {
     font-family: var(--font-family);
     font-style: normal;
     background: var(--header-bg-color);
-    overflow: auto;
+    overflow-x: hidden;
 }
 
 .main-login {
@@ -45,6 +45,5 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    position: absolute;
     bottom: 0;
 }

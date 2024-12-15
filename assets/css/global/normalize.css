@@ -6,37 +6,37 @@
 }
 
 /* Estilo para desktop */
-body::-webkit-scrollbar {
+*::-webkit-scrollbar {
     width: 8px;
     height: 8px;
     background-color: var(--background-color);
 }
 
-body::-webkit-scrollbar-thumb {
+*::-webkit-scrollbar-thumb {
     background: var(--primary-color);
     border-radius: 10px;
     opacity: 0.7;
 }
 
-body::-webkit-scrollbar-track {
+*::-webkit-scrollbar-track {
     background-color: rgba(0, 0, 0, 0.05);
     border-radius: 10px;
 }
 
 /* Ajuste para dispositivos móveis */
 @media (max-width: 768px) {
-    body::-webkit-scrollbar {
+    *::-webkit-scrollbar {
         width: 4px; /* Barra mais fina no celular */
         height: 4px;
     }
 
-    body::-webkit-scrollbar-thumb {
+    *::-webkit-scrollbar-thumb {
         background: var(--primary-color);
         border-radius: 10px;
         opacity: 0.5;
     }
 
-    body::-webkit-scrollbar-track {
+    *::-webkit-scrollbar-track {
         background-color: transparent; /* Remove fundo para suavizar */
     }
 }

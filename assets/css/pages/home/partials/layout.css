@@ -8,13 +8,14 @@ body {
     font-family: var(--font-family);
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    height: 100vh;
 }
 
 main {
     grid-area: main;
     background-color: #eee;
     padding: 20px;
+    overflow: auto;
 }
 
 header {
@@ -31,6 +32,8 @@ header {
     text-align: left;
     font-size: 24px;
     height: 100%;
+    position: sticky;
+    left: 0;
 }
 
 /* Menu lateral ajustado no mobile */
