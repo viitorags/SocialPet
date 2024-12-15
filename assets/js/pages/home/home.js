@@ -16,9 +16,9 @@ const addLikePost = () => {
             likeIcon.classList.toggle('liked');
             const likeCountSpan = likeButton.querySelector('span');
             if (likeCountSpan) {
-                let likesCount = parseInt(likeCountSpan.textContent.replace('k', ''));
+                let likesCount = parseInt(likeCountSpan.textContent.replace('', ''));
                 likesCount = likeIcon.classList.contains('liked') ? likesCount + 1 : likesCount - 1;
-                likeCountSpan.textContent = `${likesCount}k`;
+                likeCountSpan.textContent = `${likesCount}`;
             }
         }
     });

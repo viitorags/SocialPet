@@ -45,6 +45,6 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    position: relative;
+    position: absolute;
     bottom: 0;
 }
