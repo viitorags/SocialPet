@@ -3,7 +3,7 @@ body {
     grid-template-areas:
         "sidebar-left main sidebar-right"
         "footer footer footer";
-    grid-template-columns: 0.5fr 3fr 1fr;
+    grid-template-columns: 0.4.vw 2fr 1fr;
     background: var(--background-color);
     font-family: var(--font-family);
     margin: 0;
@@ -32,6 +32,7 @@ header {
     text-align: left;
     font-size: 24px;
     height: 100%;
+    width: 100%;
     position: sticky;
     left: 0;
 }

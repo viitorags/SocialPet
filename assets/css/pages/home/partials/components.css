@@ -7,6 +7,7 @@
 }
 
 .post {
+    align-self: center;
     border: 1px solid var(--post-border-color);
     border-radius: 8px;
     padding: 16px;
@@ -14,6 +15,8 @@
     background-color: var(--post-bg-color);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease;
+    height: auto;
+    width: 600px;
 }
 
 .post:hover {
@@ -54,7 +57,7 @@
     align-self: center;
     margin-top: 10px;
     height: auto;
-    max-height: 400px;
+    max-height: 250px;
     max-width: 100%;
     border-radius: 8px;
 }

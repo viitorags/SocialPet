@@ -79,6 +79,10 @@
         display: none;
     }
 
+    .post {
+        width: 100%;
+    }
+
     .icons-and-button {
         display: flex;
         justify-content: space-between;
