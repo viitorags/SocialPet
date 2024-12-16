@@ -91,13 +91,14 @@ li {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    align-self: center;
 }
 
 .post img {
     border-radius: 10px;
-    width: 200px;
-    height: 150px;
-    margin: 10px;
+    width: 217px;
+    height: 217px;
+    margin: 20px;
     cursor: pointer;
     transition: transform 0.3s, box-shadow 0.3s;
 }
